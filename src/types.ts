@@ -15,6 +15,7 @@ export interface Product {
   name: string;
   images: Image[];
   description: string;
+  model: string;
   features: string[];
   reviews: Review[];
   price: number;
@@ -28,6 +29,7 @@ export type Image = {
 };
 
 export type Review = {
+  id: number;
   rating: number;
   date: number;
   text?: string;

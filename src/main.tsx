@@ -7,7 +7,7 @@ import App from './App.tsx';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Theme className="min-h-screen flex flex-col">
+    <Theme accentColor="mint" className="min-h-screen flex flex-col">
       <App />
     </Theme>
   </StrictMode>

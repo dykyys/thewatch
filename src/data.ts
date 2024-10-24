@@ -8,7 +8,9 @@ import imgUrl6 from './assets/watch-6.webp';
 export const TISSOT_SEASSTAR = {
   id: '1234',
   name: 'Tissot Seastar 2000 Professional Powermatic 80',
-  description: 'T120.607.37.041.00',
+  model: 'T120.607.37.041.00',
+  description:
+    'The Tissot Seastar 2000 Professional Powermatic 80 is a high-performance mechanical watch with automatic winding and a power reserve of up to 80 hours. It meets ISO 6425 standards, making it ideal for diving. The watch features a ceramic bezel, screw-down crown and case back, and a helium valve for safety during deep dives. The blue dial, decorated with ocean-inspired motifs, includes indices and a date display. The sapphire crystal is scratch-resistant and has an anti-reflective coating. The watch is water-resistant up to 60 bar (600 meters), and the strap is made from a combination of synthetic material and blue rubber.  It also comes with a two-year international warranty.',
   features: [
     'Diameter: 46 mm',
     'Quick-release strap',
@@ -51,24 +53,28 @@ export const TISSOT_SEASSTAR = {
   ],
   reviews: [
     {
+      id: 1,
       rating: 5,
       text: 'Outstanding timepiece! The ceramic bezel is a standout.',
       date: new Date(2023, 6, 13).valueOf(),
     },
-    { rating: 4, date: new Date(2023, 4, 10).valueOf() },
+    { id: 2, rating: 4, date: new Date(2023, 4, 10).valueOf() },
     {
-      rating: 4,
+      id: 3,
+      rating: 5,
       text: 'Great watch, but the bracelet is a bit too heavy for my liking.',
       date: new Date(2023, 2, 21).valueOf(),
     },
     {
+      id: 4,
       rating: 5,
       text: 'Perfect for deep sea diving, the best diver watch I’ve owned.',
       date: new Date(2022, 12, 15).valueOf(),
     },
-    { rating: 3, date: new Date(2022, 11, 11).valueOf() },
+    { id: 5, rating: 5, date: new Date(2022, 11, 11).valueOf() },
     {
-      rating: 4,
+      id: 6,
+      rating: 5,
       text: 'Elegant design and excellent performance in water.',
       date: new Date(2022, 10, 30).valueOf(),
     },
