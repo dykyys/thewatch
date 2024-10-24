@@ -2,9 +2,10 @@ import { useState } from 'react';
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
 import { LeftIcon, RightIcon } from '../../images/icons';
 import { Button } from '../Button/Button';
-import { IImage } from './IImages.types';
+import { IImagesList } from './ImagesList.types';
+import { ImageCard } from '../ImageCard/ImageCard';
 
-export const Images = ({ images }: IImage) => {
+export const Images = ({ images }: IImagesList) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeImage = images[activeIndex];
   const findNextIndex = () =>
@@ -31,27 +32,13 @@ export const Images = ({ images }: IImage) => {
         />
       </AspectRatio.Root>
       <div className="my-[10px] mx-5 grid auto-rows-auto grid-cols-5 gap-0">
-        {images.map(({ url, title, alt }, i) => (
-          <AspectRatio.Root
-            className={
-              'h-full border-4 rounded p-1 ' +
-              (i === activeIndex ? 'border-yellow' : 'border-white')
-            }
-            key={url}
-            ratio={1 / 1}
-          >
-            <img
-              role="button"
-              onClick={() => setActiveIndex(i)}
-              className="h-full bg-gray-med object-cover"
-              alt={
-                alt
-                  ? `Photo of product ${alt}`
-                  : `Product photo titled ${title}`
-              }
-              src={url}
-            />
-          </AspectRatio.Root>
+        {images.map((image, i) => (
+          <ImageCard
+            {...image}
+            index={i}
+            activeIndex={activeIndex}
+            onClick={() => setActiveIndex(i)}
+          />
         ))}
       </div>
     </div>
