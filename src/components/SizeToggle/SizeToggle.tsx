@@ -1,12 +1,6 @@
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
-import { Product } from '../../types';
-export const SizeToggle = ({
-  sizes,
-  onChange,
-}: {
-  sizes: Product['sizes'];
-  onChange: (s: string) => void;
-}) => {
+import { ISizeToggle } from './SizeToggle.types';
+export const SizeToggle = ({ sizes, onChange }: ISizeToggle) => {
   return (
     <div className="flex flex-col items-start gap-1 w-40  font-medium">
       <label className="leading-tight">Size</label>

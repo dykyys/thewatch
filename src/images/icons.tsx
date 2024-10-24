@@ -1,5 +1,3 @@
-import type { Cart } from '../types';
-
 export const DownIcon = () => (
   <svg
     width="18"

@@ -1,7 +1,7 @@
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { Cart } from '../../types';
+import { ICartDetails } from './CardDetails.types';
 
-export const CartDetails = ({ cart }: { cart: Cart }) => {
+export const CartDetails = ({ cart }: ICartDetails) => {
   return (
     <>
       <div className="absolute -top-2 right-[0.7rem] bg-white rotate-45 w-4 h-4 border-t-[1px] border-l-[1px] rounded-tl-md border-gray-med z-10"></div>

@@ -1,11 +1,11 @@
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { Cart, User } from '../../types';
 import { CartIcon, UserIcon } from '../../images/icons';
 import { CartDetails } from '../CartDetails/CartDetails';
 import { UserDetails } from '../UserDetails/UserDetails';
 import { Container } from '../Container/Container';
+import { IHeader } from './Header.types';
 
-export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
+export const Header = ({ cart, user }: IHeader) => {
   return (
     <header className="bg-tiffany pt-6 pb-6 w-100">
       <Container classNames="flex justify-between items-center">

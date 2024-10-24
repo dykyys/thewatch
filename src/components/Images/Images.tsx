@@ -1,11 +1,10 @@
 import { useState } from 'react';
 import * as AspectRatio from '@radix-ui/react-aspect-ratio';
-
-import { Image } from '../../types';
 import { LeftIcon, RightIcon } from '../../images/icons';
 import { Button } from '../Button/Button';
+import { IImage } from './IImages.types';
 
-export const Images = ({ images }: { images: Image[] }) => {
+export const Images = ({ images }: IImage) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const activeImage = images[activeIndex];
   const findNextIndex = () =>

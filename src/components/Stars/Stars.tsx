@@ -1,4 +1,6 @@
-export const Stars = ({ rating }: { rating: number }) => {
+import { IStars } from './Stars.types';
+
+export const Stars = ({ rating }: IStars) => {
   return (
     <svg
       width="80"

@@ -1,7 +1,7 @@
-import { Review } from '../../types';
 import { Stars } from '../Stars/Stars';
+import { IReviewList } from './ReviewList.types';
 
-export const ReviewList = ({ reviews }: { reviews: Review[] }) => {
+export const ReviewList = ({ reviews }: IReviewList) => {
   return reviews.map((r, i) => (
     <div
       className="w-full border-b-2 px-2 py-4 last-of-type:border-b-0"

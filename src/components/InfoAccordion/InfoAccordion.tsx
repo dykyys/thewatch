@@ -1,9 +1,9 @@
 import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
-import { Product } from '../../types';
 import './styles.css';
+import { IInfoAccordion } from './InfoAccordion.types';
 
-export const InfoAccordion = ({ product }: { product: Product }) => {
+export const InfoAccordion = ({ product }: IInfoAccordion) => {
   return (
     <Accordion.Root type="multiple">
       <Accordion.Item className="AccordionItem" value="description">

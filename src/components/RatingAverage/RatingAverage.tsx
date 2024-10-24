@@ -1,7 +1,7 @@
-import { Review } from '../../types';
 import { Stars } from '../Stars/Stars';
+import { IRatingAverage } from './RatingAverage.types';
 
-export const RatingAverage = ({ reviews }: { reviews: Review[] }) => {
+export const RatingAverage = ({ reviews }: IRatingAverage) => {
   if (!reviews.length)
     return <p className="italic whitespace-nowrap">No reviews yet</p>;
   const avgRating =

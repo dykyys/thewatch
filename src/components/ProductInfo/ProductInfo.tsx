@@ -1,16 +1,10 @@
 import { useState } from 'react';
-import { CartItem, Product } from '../../types';
 import { RatingAverage } from '../RatingAverage/RatingAverage';
 import { SizeToggle } from '../SizeToggle/SizeToggle';
 import { InfoAccordion } from '../InfoAccordion/InfoAccordion';
+import { IProductInfo } from './ProductInfo.types';
 
-export const ProductInfo = ({
-  product,
-  addToCart,
-}: {
-  product: Product;
-  addToCart: (item: CartItem) => void;
-}) => {
+export const ProductInfo = ({ product, addToCart }: IProductInfo) => {
   const [size, setSize] = useState('');
   const item = { product, size: size, quantity: 1 };
 

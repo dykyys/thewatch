@@ -1,7 +1,8 @@
 import * as NavigationMenu from '@radix-ui/react-navigation-menu';
-import { User } from '../../types';
 
-export const UserDetails = ({ user }: { user?: User }) => {
+import { IUserDetails } from './UserDetails.types';
+
+export const UserDetails = ({ user }: IUserDetails) => {
   return (
     <>
       <div className="absolute -top-2 right-[0.7rem] bg-white rotate-45 w-4 h-4 border-t-[1px] border-l-[1px] rounded-tl-md border-gray-med z-1"></div>
