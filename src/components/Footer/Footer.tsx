@@ -4,20 +4,20 @@ export const Footer = () => {
       <p>
         Developed by{' '}
         <a
-          className="underline text-softCoral text-lg font-medium"
+          className="underline text-softCoral text-lg font-medium hover:text-pearlWhite focus:text-pearlWhite transition-colors duration-300 hover:shadow-lg focus:shadow-lg"
           href="https://github.com/dykyys"
         >
           dykyy.s
         </a>{' '}
         with{' '}
         <a
-          className="underline text-charcoalGray text-lg font-medium"
+          className="underline text-charcoalGray text-lg font-medium hover:text-pearlWhite focus:text-pearlWhite transition-colors duration-300 hover:shadow-lg focus:shadow-lg"
           href="https://radix-ui.com"
         >
           RadixUI
         </a>{' '}
         <a
-          className="underline text-charcoalGray text-lg font-medium"
+          className="underline text-charcoalGray text-lg font-medium hover:text-pearlWhite focus:text-pearlWhite transition-colors duration-300 hover:shadow-lg focus:shadow-lg"
           href="https://tailwindcss.com"
         >
           TailwindCSS

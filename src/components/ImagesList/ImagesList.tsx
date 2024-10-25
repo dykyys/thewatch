@@ -34,6 +34,7 @@ export const Images = ({ images }: IImagesList) => {
       <div className="my-[10px] mx-5 grid auto-rows-auto grid-cols-5 gap-0">
         {images.map((image, i) => (
           <ImageCard
+            key={image.id}
             {...image}
             index={i}
             activeIndex={activeIndex}

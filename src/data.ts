@@ -24,29 +24,35 @@ export const TISSOT_SEASSTAR = {
   ],
   images: [
     {
+      id: 1,
       url: imgUrl1,
       title: 'Tissot Seastar 2000 Professional Powermatic 80',
       alt: 'Front view of the Tissot Seastar 2000 Professional Powermatic 80',
     },
     {
+      id: 2,
       url: imgUrl2,
       title: 'Tissot Seastar with ceramic bezel',
       alt: 'Side view highlighting ceramic bezel',
     },
     {
+      id: 3,
       url: imgUrl3,
       title: 'Transparent case back',
       alt: 'View of the transparent case back showcasing the mechanism',
     },
     {
+      id: 4,
       url: imgUrl4,
       alt: 'Full view of the Tissot Seastar wristwatch in profile',
     },
     {
+      id: 5,
       url: imgUrl5,
       alt: 'Tissot Seastar 2000 displayed on a stand',
     },
     {
+      id: 6,
       url: imgUrl6,
       alt: 'Strap Tissot Seastar',
     },

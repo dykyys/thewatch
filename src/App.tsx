@@ -8,10 +8,12 @@ function App() {
     <>
       <Header cart={cart} user={user} />
       <main className="flex-grow">
-        <Container classNames="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
-          <Images images={product.images} />
-          <ProductInfo product={product} addToCart={addToCart} />
-        </Container>
+        <section className="pt-10 pb-10">
+          <Container classNames="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2 ">
+            <Images images={product.images} />
+            <ProductInfo product={product} addToCart={addToCart} />
+          </Container>
+        </section>
       </main>
 
       <Footer />

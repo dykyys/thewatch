@@ -10,7 +10,7 @@ export const UserDetails = ({ user }: IUserDetails) => {
         <>
           <p className="pb-3">{user.name}</p>
           <NavigationMenu.Link href="/logout">
-            <button className="bg-yellow rounded py-2 px-[19px]">
+            <button className="bg-yellow rounded py-2 px-[19px] hover:shadow-lg focus:shadow-lg transition-colors duration-300 hover:bg-softCoral focus:bg-softCoral">
               Log out
             </button>
           </NavigationMenu.Link>

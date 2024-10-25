@@ -34,5 +34,6 @@ declare global {
     url: string;
     title?: string;
     alt: string;
+    id: number;
   };
 }

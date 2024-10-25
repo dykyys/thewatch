@@ -15,7 +15,6 @@ export const ImageCard = ({
         'h-full border-4 rounded p-1 ' +
         (index === activeIndex ? 'border-yellow' : 'border-white')
       }
-      key={url}
       ratio={1 / 1}
     >
       <img

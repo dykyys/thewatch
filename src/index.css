@@ -7,3 +7,7 @@
 html {
   font-family: Outfit, system-ui, sans-serif;
 }
+
+a {
+  outline: none;
+}

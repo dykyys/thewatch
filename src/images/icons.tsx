@@ -31,12 +31,12 @@ export const LeftIcon = () => (
         cy="16"
         r="16"
         transform="matrix(-1 0 0 1 32 0)"
-        fill="white"
+        fill="#4a4a4a60"
       />
       <path
         id="Vector 1"
         d="M19 24L12.4142 17.4142C11.6332 16.6332 11.6332 15.3668 12.4142 14.5858L19 8"
-        stroke="black"
+        stroke="#0ABAB5"
         strokeWidth="2"
       />
     </g>
@@ -58,12 +58,12 @@ export const RightIcon = () => (
         cx="16"
         cy="16"
         r="16"
-        fill="white"
+        fill="#4a4a4a60"
       />
       <path
         id="Vector 1"
         d="M13 24L19.5858 17.4142C20.3668 16.6332 20.3668 15.3668 19.5858 14.5858L13 8"
-        stroke="black"
+        stroke="#0ABAB5"
         strokeWidth="2"
       />
     </g>
@@ -97,20 +97,20 @@ export const UserIcon = () => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <g id="User">
-        <circle id="Ellipse 1" cx="20" cy="20" r="20" fill="white" />
+        <circle id="Ellipse 1" cx="20" cy="20" r="20" fill="none" />
         <g id="User Icon">
           <circle
             id="Ellipse 287"
             cx="20"
             cy="14"
             r="7"
-            stroke="#495CEF"
+            stroke="#0ABAB5"
             strokeWidth="2"
           />
           <path
             id="Rectangle 15"
             d="M9 34L9 32C9 25.9249 13.9249 21 20 21V21C26.0751 21 31 25.9249 31 32V34"
-            stroke="#495CEF"
+            stroke="#0ABAB5"
             strokeWidth="2"
           />
         </g>
@@ -130,7 +130,7 @@ export const CartIcon = ({ cart }: { cart: Cart }) => {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="Cart">
-          <circle id="Ellipse 2" cx="20" cy="20" r="20" fill="white" />
+          <circle id="Ellipse 2" cx="20" cy="20" r="20" fill="none" />
           <g id="Cart Icon">
             <g id="Rectangle 13">
               <mask id="path-2-inside-1_1506_161889" fill="white">
@@ -138,14 +138,14 @@ export const CartIcon = ({ cart }: { cart: Cart }) => {
               </mask>
               <path
                 d="M12 10C12 6.68629 14.6863 4 18 4H22C25.3137 4 28 6.68629 28 10H24C24 8.89543 23.1046 8 22 8H18C16.8954 8 16 8.89543 16 10H12ZM26 17H14H26ZM12 17V10C12 6.68629 14.6863 4 18 4V8C16.8954 8 16 8.89543 16 10V17H12ZM22 4C25.3137 4 28 6.68629 28 10V17H24V10C24 8.89543 23.1046 8 22 8V4Z"
-                fill="#495CEF"
+                fill="#0ABAB5"
                 mask="url(#path-2-inside-1_1506_161889)"
               />
             </g>
             <path
               id="Rectangle 14"
               d="M10.9082 14.9524C10.9336 14.4192 11.3732 14 11.907 14H28.093C28.6268 14 29.0665 14.4192 29.0918 14.9524L29.8016 29.8573C29.8831 31.5682 28.5179 33 26.805 33H13.195C11.4821 33 10.1169 31.5682 10.1984 29.8573L10.9082 14.9524Z"
-              stroke="#495CEF"
+              stroke="#0ABAB5"
               strokeWidth="2"
               strokeLinejoin="round"
             />
