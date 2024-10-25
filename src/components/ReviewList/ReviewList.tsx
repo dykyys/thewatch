@@ -2,18 +2,18 @@ import { Stars } from '../Stars/Stars';
 import { IReviewList } from './ReviewList.types';
 
 export const ReviewList = ({ reviews }: IReviewList) => {
-  return reviews.map((r, i) => (
-    <div
+  return reviews.map(({ id, text, rating, date }) => (
+    <ul
       className="w-full border-b-2 px-2 py-4 last-of-type:border-b-0"
-      key={i}
+      key={id}
     >
-      <div className="flex justify-between">
-        <Stars rating={r.rating} />
+      <li className="flex justify-between">
+        <Stars rating={rating} />
         <span className="text-sm text-gray-dark">
-          {new Date(r.date).toDateString()}
+          {new Date(date).toDateString()}
         </span>
-      </div>
-      <div>{r.text ? <p className="pt-3">{r.text}</p> : null}</div>
-    </div>
+      </li>
+      <div>{text ? <p className="pt-3">{text}</p> : null}</div>
+    </ul>
   ));
 };

@@ -2,6 +2,7 @@ import * as Accordion from '@radix-ui/react-accordion';
 import { ChevronDownIcon } from '@radix-ui/react-icons';
 import './styles.css';
 import { IInfoAccordion } from './InfoAccordion.types';
+import { ReviewList } from '../ReviewList/ReviewList';
 
 export const InfoAccordion = ({ product }: IInfoAccordion) => {
   return (
@@ -16,8 +17,8 @@ export const InfoAccordion = ({ product }: IInfoAccordion) => {
           </Accordion.Trigger>
         </Accordion.Header>
 
-        <Accordion.Content className="AccordionContent">
-          <p>{product.description}</p>
+        <Accordion.Content className="AccordionContent p-4">
+          <p className="indent-8">{product.description}</p>
         </Accordion.Content>
       </Accordion.Item>
 
@@ -31,10 +32,12 @@ export const InfoAccordion = ({ product }: IInfoAccordion) => {
           </Accordion.Trigger>
         </Accordion.Header>
 
-        <Accordion.Content className="AccordionContent">
-          <ul>
+        <Accordion.Content className="AccordionContent p-4">
+          <ul className="">
             {product.features.map((feature) => (
-              <li key={feature}>{feature}</li>
+              <li className="list-disc" key={feature}>
+                {feature}
+              </li>
             ))}
           </ul>
         </Accordion.Content>
@@ -50,11 +53,7 @@ export const InfoAccordion = ({ product }: IInfoAccordion) => {
           </Accordion.Trigger>
         </Accordion.Header>
         <Accordion.Content className="AccordionContent">
-          <ul className="AccordionContentText">
-            {product.reviews.map(
-              ({ id, text }) => text && <li key={id}> {text}</li>
-            )}
-          </ul>
+          <ReviewList reviews={product.reviews} />
         </Accordion.Content>
       </Accordion.Item>
     </Accordion.Root>
