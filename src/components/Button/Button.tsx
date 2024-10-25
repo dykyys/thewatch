@@ -1,6 +1,7 @@
 import { IButton } from './Button.types';
 
 export const Button = ({ children, onClick, position }: Readonly<IButton>) => {
+  console.log(position !== 'left' ? 'r' : 'l');
   return (
     <button
       className={` absolute ${position}-0 top-1/2 z-10 m${
